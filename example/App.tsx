@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Text, View, StyleSheet } from 'react-native';
-import { useOtpTimer, OtpTimer } from 'react-native-otp-timer';
+import { useOtpTimer, OtpTimer } from 'react-native-otp-timer-hook';
 
 const App = () => {
   //🧠 Hook Usage
@@ -22,7 +22,7 @@ const App = () => {
       <OtpTimer
         initialTimer={60}
         resendLimit={3}
-        onResend={async (count) => {
+        onResend={async (count: number) => {
           console.log('Resend #', count);
         }}
         onTimeout={() => console.log('Timed out!')}
