@@ -1,10 +1,10 @@
 {
   "name": "react-native-otp-timer-hook",
-  "version": "0.0.1",
+  "private": false,
+  "version": "0.0.2",
   "description": "A customizable OTP timer hook and UI component with background support for React Native.",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
-  "private":true,
   "exports": {
     ".": {
       "source": "./src/index.tsx",
